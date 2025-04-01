@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Lockout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            font-family: 'Courier New', Courier, monospace;
+            color: #e74c3c;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #111;
+            padding: 20px;
+            border: 2px solid #e74c3c;
+            width: 50%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #e74c3c;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        input[type="button"] {
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .warning {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+        
+        /* Flashing border animation */
+        .container {
+            animation: border-flash 1.5s infinite alternate;
+        }
+
+        @keyframes border-flash {
+            0% { border-color: #e74c3c; }
+            100% { border-color: #c0392b; }
+        }
+
+        /* Futuristic label animation */
+        .futuristic-text {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            color: #e74c3c;
+        }
+        
+        .futuristic-text::before {
+            content: "SECURE SYSTEM LOCKED";
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            height: 100%;
+            color: #e74c3c;
+            animation: slide-text 5s linear infinite;
+        }
+
+        @keyframes slide-text {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Placeholder for your logo (you can replace the text with an <img> tag) -->
+            <img src="https://via.placeholder.com/100x100.png?text=LOGO" alt="Logo">
+        </div>
+
+        <!-- Terminal Lockout -->
+        <h1>TERMINAL LOCKOUT</h1>
+
+        <!-- Warning message -->
+        <div class="warning">
+            <p>EMERGENCY LOCKOUT PROTOCOL INITIATED</p>
+            <div class="futuristic-text"></div>
+        </div>
+    </div>
+</body>
+</html>
