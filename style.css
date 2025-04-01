@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e74c3c;
+}
+
+.container {
+    text-align: center;
+    background-color: #111;
+    padding: 20px;
+    border: 2px solid #e74c3c;
+    width: 50%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.warning {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+/* Flashing border animation */
+.container {
+    animation: border-flash 1.5s infinite alternate;
+}
+
+@keyframes border-flash {
+    0% { border-color: #e74c3c; }
+    100% { border-color: #c0392b; }
+}
+
+/* Futuristic label animation */
+.futuristic-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #e74c3c;
+}
+
+.futuristic-text::before {
+    content: "SECURE SYSTEM LOCKED";
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    color: #e74c3c;
+    animation: slide-text 5s linear infinite;
+}
+
+@keyframes slide-text {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
