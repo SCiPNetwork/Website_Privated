@@ -35,16 +35,6 @@ h1 {
     color: #e74c3c;
 }
 
-/* Flashing border animation */
-.container {
-    animation: border-flash 1.5s infinite alternate;
-}
-
-@keyframes border-flash {
-    0% { border-color: #e74c3c; }
-    100% { border-color: #c0392b; }
-}
-
 /* Futuristic label animation */
 .futuristic-text {
     position: relative;
@@ -61,10 +51,4 @@ h1 {
     top: 0;
     height: 100%;
     color: #e74c3c;
-    animation: slide-text 5s linear infinite;
-}
-
-@keyframes slide-text {
-    0% { left: -100%; }
-    100% { left: 100%; }
 }
