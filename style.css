@@ -34,21 +34,3 @@ h1 {
     font-size: 14px;
     color: #e74c3c;
 }
-
-/* Futuristic label animation */
-.futuristic-text {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    color: #e74c3c;
-}
-
-.futuristic-text::before {
-    content: "SECURE SYSTEM LOCKED";
-    position: absolute;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    height: 100%;
-    color: #e74c3c;
-}
